@@ -1,0 +1,118 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f3f4f6;
+    color: #333;
+}
+
+.container {
+    display: flex;
+}
+
+.sidebar {
+    width: 250px;
+    background-color: #1c75bc;
+    padding: 20px;
+    height: 100vh;
+    color: white;
+}
+
+.sidebar h2 {
+    margin-bottom: 20px;
+}
+
+.nav-links {
+    list-style: none;
+}
+
+.nav-links li {
+    margin: 10px 0;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+}
+
+.main-content {
+    flex-grow: 1;
+    padding: 20px;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.header h1 {
+    font-size: 24px;
+}
+
+.header span {
+    font-weight: bold;
+}
+
+.actions button {
+    margin-left: 10px;
+    padding: 10px 15px;
+    background-color: #1c75bc;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.projects, .announcements, .trending {
+    margin-bottom: 30px;
+}
+
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.project-card {
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-left: 5px solid orange;
+}
+
+.project-actions {
+    margin-top: 15px;
+}
+
+.project-actions i {
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.announcements ul, .trending ul {
+    list-style: none;
+}
+
+.announcements ul li, .trending ul li {
+    padding: 10px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+.announcements ul li strong {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.second {
+    display: flex;
+}
+
+.double {
+    display: flex;
+}
